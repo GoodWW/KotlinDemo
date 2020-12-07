@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE)
             != PackageManager.PERMISSION_GRANTED
         ) {
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         } else {
             Toast.makeText(this, "拥有权限正常执行", Toast.LENGTH_SHORT).show()
         }
+
     }
 
     override fun onRequestPermissionsResult(
